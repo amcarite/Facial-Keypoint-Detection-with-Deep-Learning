@@ -23,4 +23,15 @@ The training data is comprised of 7,049 black and white images with resolution o
 
 There were three approaches that were deployed to handle the large amount of missing labels. The first was to simply cleave any image from the dataset that did not include a fully labeled face (henceforth referred to as the 'noNA' dataset). The second and third approaches involved imputing these missing labels using k-nearest neighbors(KNN) and forward fill(ffill) techniques. As seen in later parts of the repo, while KNN and ffilll provided our data set with much more training examples, the more inacurate imputed labels led to a higher loss than the noNA training set across all models in which they were ran. 
 
+## Data Augmentation
+
 ## Setting a Baseline
+
+To set a baseline, which the team could use as a starting point, a simple two layer Neural Net was used with the non-augmented noNA dataset. Right from the start, we achieve an 83% accuracy. To increase the accuracy from the baseline, the model will need to become more complex with more layers and nodes. However, this baselines proves a point that for some usecases an 83% accuracy would be perfectly fine. In fact, the simplistic model may be a better fit for some applications which require a lightweight model design for their deployed build. 
+
+## Convolutional Neural Networks
+
+## Transfer Learning
+
+## Comparing Models
+
