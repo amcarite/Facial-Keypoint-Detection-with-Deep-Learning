@@ -31,7 +31,11 @@ To set a baseline, which the team could use as a starting point, a simple two la
 
 ## Convolutional Neural Networks
 
+Convolutional neural networks (CNN) are great models for computer vision tasks, and showed a large jump in accuracy from our baseline model. In fact, the team was surprised at the level of accuracy a simple CNN model could produce. What the team soon learned, is that the incrimental increased from that simple CNN are increasingly challenging, and where much of the effort was focused on. 
+
 ## Transfer Learning
+
+A helpful tactic that the team used to further increase model accuracy, was the add initialize the model with transfered weights from an already trained neural net. This transfer learning method is extremely powerful and allows the model to use already trained weights, albeit on a different training set, without the need to retrain the larger architectures. This saved the team training time while also seeing a bump in accuracy. The two pretrained models that the project experimented with, were Resnet50 and EfficientNetB7. Both of these models are well-known and are provided with pretrained weights in the keras python library.
 
 ## Comparing Models
 
