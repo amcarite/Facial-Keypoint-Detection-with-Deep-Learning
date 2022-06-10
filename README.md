@@ -17,9 +17,7 @@ This repo contains the final development notebook, the trainging and test data, 
 
 
 ## The Data 
-The training data is comprised of 7,049 black and white images with resolution of 96x96 pixels. Each image was designed to have 30 labels for 15 facial features, with one x label and one y label for each facial feature. Upon initial EDA, the team discoved a large amount of missing labels for more than half of the provided trainging data. See Figure 1 below. 
-
-![Figure 1](https://github.com/[amcarite]/[facial_keypoint_detection]/blob/[main]/image.jpg?raw=true)
+The training data is comprised of 7,049 black and white images with resolution of 96x96 pixels. Each image was designed to have 30 labels for 15 facial features, with one x label and one y label for each facial feature. Upon initial EDA, the team discoved a large amount of missing labels for more than half of the provided trainging data. 
 
 There were three approaches that were deployed to handle the large amount of missing labels. The first was to simply cleave any image from the dataset that did not include a fully labeled face (henceforth referred to as the 'noNA' dataset). The second and third approaches involved imputing these missing labels using k-nearest neighbors(KNN) and forward fill(ffill) techniques. As seen in later parts of the repo, while KNN and ffilll provided our data set with much more training examples, the more inacurate imputed labels led to a higher loss than the noNA training set across all models in which they were ran. 
 
@@ -39,3 +37,4 @@ A helpful tactic that the team used to further increase model accuracy, was the 
 
 ## Comparing Models
 
+Taking a look at the accuracy of our final models, 
