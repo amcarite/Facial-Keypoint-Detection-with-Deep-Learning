@@ -21,7 +21,13 @@ The training data is comprised of 7,049 black and white images with resolution o
 
 There were three approaches that were deployed to handle the large amount of missing labels. The first was to simply cleave any image from the dataset that did not include a fully labeled face (henceforth referred to as the 'noNA' dataset). The second and third approaches involved imputing these missing labels using k-nearest neighbors(KNN) and forward fill(ffill) techniques. As seen in later parts of the repo, while KNN and ffilll provided our data set with much more training examples, the more inacurate imputed labels led to a higher loss than the noNA training set across all models in which they were ran. 
 
+![Figure 1](photos/labeled_faces.png)
+
 ## Data Augmentation
+To increase the generalizability of our model, the team opted to use image augmentation techniques. These techniques allowed for our data set to increase from ~1,000 images to ~13,000. The images were shifted, rotated and blurred, along with brightness and noise augmentation. The resulting effect of this augmentation decreased our mean squared error quite significantly, and can be seen in the results section of this readme file.
+
+An example of rotated images:
+![Figure 2](photos/rotated_faces.png)
 
 ## Setting a Baseline
 
