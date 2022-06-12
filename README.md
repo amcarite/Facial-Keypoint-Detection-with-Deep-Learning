@@ -45,8 +45,10 @@ A helpful tactic that the team used to further increase model accuracy, was the 
 
 Taking a look at the accuracy of our final models, we can see the initial baseline model achieving a relatively high accuracy. The models that proceed the baseline take very marginal increases, despite the large increase in model complexity. 
 
-![Figure 2](photos/model_scores.jpg)
+![Figure 3](photos/model_scores.jpg)
 
-Again, the "best" model depends on the required use case. The below image shows that
+Again, the "best" model depends on the required use case. The below image shows that the resnet_aug_D2 (resnet transfer learning with augmented data and two dense layers) has the second highest accuracy, only being beaten by the effnet_aug_D1 model. However, the resnet_aug_D2 models only has marginally less accuracy, but has less than half the amount of parameters of the effnet model. For lighter weight use cases, such as running these models on the edge, a machine learning engineer would likely select the resnet model, despite the small decrease in accuracy. On the other hand, for use cases that require extremeley high accuracy, such as medical image classification models, accuracy would be valued much more than the number of parameters.
 
-![Figure 3](photos/acc_param.png)
+![Figure 4](photos/acc_param.png)
+
+Further analysis and higher detail work can be found in the facial_keypoint_models.ipynb file. Additionally, model weights were pickled and saved in the 'models' folder. 
