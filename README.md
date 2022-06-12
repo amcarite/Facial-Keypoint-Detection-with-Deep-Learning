@@ -31,11 +31,11 @@ An example of rotated images:
 
 ## Setting a Baseline
 
-To set a baseline, which the team could use as a starting point, a simple two layer Neural Net was used with the non-augmented noNA dataset. Right from the start, we achieve an 83% accuracy. To increase the accuracy from the baseline, the model will need to become more complex with more layers and nodes. However, this baselines proves a point that for some usecases an 83% accuracy would be perfectly fine. In fact, the simplistic model may be a better fit for some applications which require a lightweight model design for their deployed build. 
+To set a baseline, which the team could use as a starting point, a simple two layer Neural Net was used with the non-augmented noNA dataset. Right from the start, we achieve an 83% accuracy. To increase the accuracy from the baseline, the model will need to become more complex with more layers and nodes. However, this baselines proves a point that for some use-cases an 83% accuracy would be perfectly fine. In fact, the simplistic model may be a better fit for some applications which require a lightweight model design for their deployed build. 
 
 ## Convolutional Neural Networks
 
-Convolutional neural networks (CNN) are great models for computer vision tasks, and showed a large jump in accuracy from our baseline model. In fact, the team was surprised at the level of accuracy a simple CNN model could produce. What the team soon learned, is that the incrimental increased from that simple CNN are increasingly challenging, and where much of the effort was focused on. 
+Convolutional neural networks (CNN) are great models for computer vision tasks, and our CNN models showed a large jump in accuracy from our baseline model. In fact, the team was surprised at the level of accuracy a simple CNN model could produce. What the team soon learned, is that the incrimental increased from that simple CNN are increasingly challenging, and where much of the effort was focused on. 
 
 ## Transfer Learning
 
@@ -43,4 +43,10 @@ A helpful tactic that the team used to further increase model accuracy, was the 
 
 ## Comparing Models
 
-Taking a look at the accuracy of our final models, 
+Taking a look at the accuracy of our final models, we can see the initial baseline model achieving a relatively high accuracy. The models that proceed the baseline take very marginal increases, despite the large increase in model complexity. 
+
+![Figure 2](photos/model_scores.jpg)
+
+Again, the "best" model depends on the required use case. The below image shows that
+
+![Figure 3](photos/acc_param.png)
